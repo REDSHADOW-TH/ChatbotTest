@@ -6,7 +6,7 @@ const config = require("./package.json").config
 const webhook = require('./services/webhookService').webhookHandle
 
 
-const port = process.env.port || config.port
+const port = process.env.PORT || config.port
 
 server.get('/webhook', (req, res) => {
     webhook()

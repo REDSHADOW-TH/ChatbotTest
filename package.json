@@ -19,6 +19,6 @@
   "config": {
     "port": 2000,
     "serverRunningMessage": "Chatbot server is running",
-    "vertifyToken": "test"
+    "vertifyToken": "EAAzPZAf4hZBb8BAEjcSx9SxUPbwWienuFAC1wV2svMZAs9CS5LTafh6ovk3paaCykUy09ZAta42nXMKtxk9KU0mZCVr8DxIuF6xWUY12GpIAIGom962OQ6EDR9eicqve5srJvDN7GTR6RYZByxTS8cWSqxMDR8ESAwC8JShnsd9mm5yFDNorfg"
   }
 }

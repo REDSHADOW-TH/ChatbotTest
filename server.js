@@ -42,14 +42,7 @@ server.post('/webhook', (req, res) => {
     let message = ''
     let timeStamp = '' 
     
-    if (body.object === 'page') {
-        body.entry.forEach((entry) => {
-            let msg = entry.messaging
-            if (msg.recipient) {
-                id = msg.recipient.id
-            }
-        })
-    }
+    console.log(body.entry.messaging.sender)
     console.log(id)
     console.log('webhook recive')
     res.end()

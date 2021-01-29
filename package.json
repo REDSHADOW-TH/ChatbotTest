@@ -21,7 +21,7 @@
   "config": {
     "port": 2000,
     "serverRunningMessage": "Chatbot server is running",
-    "vertifyToken": "EAAzPZAf4hZBb8BAEjcSx9SxUPbwWienuFAC1wV2svMZAs9CS5LTafh6ovk3paaCykUy09ZAta42nXMKtxk9KU0mZCVr8DxIuF6xWUY12GpIAIGom962OQ6EDR9eicqve5srJvDN7GTR6RYZByxTS8cWSqxMDR8ESAwC8JShnsd9mm5yFDNorfg",
+    "vertifyToken": "EAAzPZAf4hZBb8BAIfZCwl7kbYJZCIBxEocL4QiH2cxRggcN6GZBxeE1ZA9hOZBgAAwzoQjO9cR2FZBqnT00QwIsa6wQrZCR8hSm7QnUZArTIiKddyM6ZAASJwFxZATRHhKrZC0PZBpal0vYCgszOZBkc3Vz04YKVv4WFWcZBt2Na8dKIQUslWKdXCzcZAnqaF",
     "api": ""
   }
 }

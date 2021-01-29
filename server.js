@@ -37,6 +37,7 @@ server.post('/webhook', (req, res) => {
     
     let recipient = body.entry[0].messaging[0].sender.id
     console.log(recipient)
+    console.log(recipient)
     console.log('webhook recive')
     chat.sendMessage(recipient, 'test')
     res.end()

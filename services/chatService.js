@@ -10,7 +10,9 @@ function sendMessage(recipient, message) {
             text: message
         }
     }
-    http.post(`${api}?access_token=${config.vertifyToken}`, data)
+    http.post(`${api}?access_token=${config.vertifyToken}`, data, {
+        'Content-Type': 'application/json'
+    })
     .then(() => {
         console.log('send success')
     }).catch((err) => {

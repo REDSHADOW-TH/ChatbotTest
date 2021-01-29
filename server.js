@@ -5,8 +5,7 @@ const server = express().use(bodyParser.json())
 
 const config = require("./package.json").config
 
-const webhook = require('./services/webhookService').webhookHandle
-
+const chat = require('./services/chatService')
 
 const port = process.env.PORT || config.port
 
@@ -24,7 +23,6 @@ server.get('/webhook', (req, res) => {
         
         console.log('WEBHOOK_VERIFIED');
         res.status(200).send(challenge);
-      
       } else {
 
         res.sendStatus(403);      
@@ -37,9 +35,10 @@ server.get('/webhook', (req, res) => {
 server.post('/webhook', (req, res) => {
     let body = req.body
     
-    let recipient = body.entry[0].messaging[0].recipient
+    let recipient = body.entry[0].messaging[0].recipient.id
     console.log(recipient)
     console.log('webhook recive')
+    chat.sendMessage(recipient, 'test')
     res.end()
 })
 

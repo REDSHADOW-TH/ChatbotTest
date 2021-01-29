@@ -1,5 +1,7 @@
-function webhookHandle() {
-    console.log('webhook is running')
+function webhookHandle(req) {
+    let res = {}
+    
+    return res
 }
 
 module.exports = {

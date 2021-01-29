@@ -5,7 +5,7 @@ const api = 'https://graph.facebook.com/v9.0/me/messages'
 
 function sendMessage(recipient, message) {
     data = {
-        recipient: recipient,
+        recipient: {recipient},
         message: {
             text: message
         }

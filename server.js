@@ -39,9 +39,9 @@ server.post('/webhook', (req, res) => {
 
     if (body.object === 'page') {
         body.entry.forEach((entry) => {
-
         })
     }
+    console.log(body)
     console.log('webhook recive')
     res.end()
 })

@@ -1,6 +1,8 @@
 const config = require('../package.json').config
 const http = require('axios').default
 
+const api = 'https://graph.facebook.com/v9.0/me/messages'
+
 function sendMessage(recipient, message) {
     data = {
         recipient: recipient,
@@ -8,7 +10,7 @@ function sendMessage(recipient, message) {
             text: message
         }
     }
-    http.post(`${config.api}?access_token=${config.vertifyToken}`, data)
+    http.post(`${api}?access_token=${config.vertifyToken}`, data)
     .then(() => {
         console.log('send success')
     }).catch((err) => {

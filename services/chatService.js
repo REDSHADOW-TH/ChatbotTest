@@ -8,7 +8,7 @@ function sendMessage(recipient, message) {
             text: message
         }
     }
-    http.post(`${config.api}/?access_token=${config.vertifyToken}`)
+    http.post(`${config.api}/?access_token=${config.vertifyToken}`,{body: data})
 }
 
 module.exports = {

@@ -37,8 +37,16 @@ server.get('/webhook', (req, res) => {
 server.post('/webhook', (req, res) => {
     let body = req.body
 
+
+    let id = ''
+    let message = ''
+    let timeStamp = '' 
+    
     if (body.object === 'page') {
         body.entry.forEach((entry) => {
+            if (entry.messaging) {
+                console.log(entry.messaging)
+            }
         })
     }
     console.log(body)

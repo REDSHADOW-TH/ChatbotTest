@@ -44,12 +44,13 @@ server.post('/webhook', (req, res) => {
     
     if (body.object === 'page') {
         body.entry.forEach((entry) => {
-            if (entry.messaging) {
-                console.log(entry.messaging)
+            let msg = entry.messaging
+            if (msg.recipient) {
+                id = msg.recipient.id
             }
         })
     }
-    console.log(body)
+    console.log(id)
     console.log('webhook recive')
     res.end()
 })

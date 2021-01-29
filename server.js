@@ -42,6 +42,8 @@ server.post('/webhook', (req, res) => {
 
         })
     }
+    console.log('webhook recive')
+    res.end()
 })
 
 server.get('/', (req, res) => {

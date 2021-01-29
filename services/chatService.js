@@ -29,9 +29,7 @@ function callSendAPI(sender_psid, response) {
 
 function makeGenericTemplate(senderId, title, subTitle, imgUrl) {
     let data = {
-        'payload': {
-            'template_type': 
-        }
+        
     }
 }
 

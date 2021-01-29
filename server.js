@@ -57,7 +57,14 @@ server.listen(port, () => {
 })
 
 function getMessage(key) {
-    let result = keyword[key]
+    let result = undefined
+
+    for (i in keyword) {
+        if (i.includes(key)) {
+            result = keyword[i]
+            break
+        }
+    }
 
     if (result === undefined) {
         return 'ไม่เข้าใจสิ่งที่คุณพูด'

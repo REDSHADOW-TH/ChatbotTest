@@ -1,5 +1,4 @@
 const config = require('../package.json').config
-const http = require('axios').default
 const request = require('request')
 
 const api = 'https://graph.facebook.com/v9.0/me/messages'
@@ -13,7 +12,6 @@ function callSendAPI(sender_psid, response) {
           "text": response
       }
     }
-    console.log('token', config.vertifyToken)
   request({
     "uri": "https://graph.facebook.com/v2.6/me/messages",
     "qs": { "access_token": config.vertifyToken },
@@ -28,6 +26,14 @@ function callSendAPI(sender_psid, response) {
     }
   }); 
   }
+
+function makeGenericTemplate(senderId, title, subTitle, imgUrl) {
+    let data = {
+        'payload': {
+            'template_type': 
+        }
+    }
+}
 
 function sendMessage(recipient, message) {
     callSendAPI(recipient, message)

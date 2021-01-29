@@ -8,7 +8,7 @@ function sendMessage(recipient, message) {
             text: message
         }
     }
-    http.post(`${config.api}/?access_token=${config.vertifyToken}`, data)
+    http.post(`${config.api}?access_token=${config.vertifyToken}`, data)
     .then(() => {
         console.log('send success')
     }).catch((err) => {

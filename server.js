@@ -42,7 +42,7 @@ server.post('/webhook', (req, res) => {
     let message = ''
     let timeStamp = '' 
     
-    console.log(body.entry.messaging.sender)
+    console.log(body.entry.messaging[0])
     console.log(id)
     console.log('webhook recive')
     res.end()

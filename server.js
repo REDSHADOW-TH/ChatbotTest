@@ -42,7 +42,7 @@ server.post('/webhook', (req, res) => {
 
     console.log(message)
 
-    chat.sendMessage(recipient, message)
+    chat.sendMessage(recipient, body.entry[0].messaging[0].message)
     res.end()
 })
 

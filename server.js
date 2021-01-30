@@ -40,12 +40,13 @@ server.post('/webhook', (req, res) => {
 
     let message = getMessage(body.entry[0].messaging[0].message.text)
 
-    chat.sendMessage(recipient, body.entry[0].messaging[0].message.text)
+    chat.sendMessage(recipient, message)
     res.end()
 })
 
 server.get('/', (req, res) => {
-    chat.sendMessage('5271474912870505', 'test')
+    let message = getMessage('test')
+    chat.sendMessage('5271474912870505', message)
     res.send({
         status: 200, message: '.....'
     })
@@ -58,7 +59,7 @@ server.listen(port, () => {
 function getMessage(key) {
     let result = keyword[key]
 
-    if (result === (undefined || null)) {
+    if (result === undefined) {
         return 'ไม่เข้าใจสิ่งที่คุณพูด'
     } else {
         return result

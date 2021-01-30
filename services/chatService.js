@@ -13,10 +13,10 @@ function callSendAPI(sender_psid, response) {
           "text": response
       }
     }
-    console.log('token', config.vertifyTokens)
+    console.log('token', config.vertifyToken)
   request({
     "uri": "https://graph.facebook.com/v2.6/me/messages",
-    "qs": { "access_token": config.vertifyTokens },
+    "qs": { "access_token": config.vertifyToken },
     "method": "POST",
     "json": request_body
   }, (err, res, body) => {

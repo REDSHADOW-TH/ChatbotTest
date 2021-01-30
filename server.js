@@ -40,7 +40,7 @@ server.post('/webhook', (req, res) => {
 
     let message = getMessage(body.entry[0].messaging[0].message.text)
 
-    chat.sendMessage(recipient, message)
+    chat.sendMessage(recipient, body.entry[0].messaging[0].message.text)
     res.end()
 })
 

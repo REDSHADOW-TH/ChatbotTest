@@ -33,7 +33,7 @@ function callSendAPI(sender_psid, response, fullMessage = null) {
                 "default_action": {
                   "type": "web_url",
                   "url": "https://chatbot-test212.herokuapp.com/",
-                  "messenger_extensions": false,
+                  "messenger_extensions": true,
                   "webview_height_ratio": "tall",
                   "fallback_url": "https://chatbot-test212.herokuapp.com/"
                 }

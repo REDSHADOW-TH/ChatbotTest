@@ -32,7 +32,7 @@ function callSendAPI(sender_psid, response, fullMessage = null) {
                 "subtitle": "ทดสอบการส่ง template เเละ รูปภาพ",
                 "default_action": {
                   "type": "web_url",
-                  "url": "c/",
+                  "url": "https://www.brother.co.th",
                   "messenger_extensions": true,
                   "webview_height_ratio": "tall",
                   "fallback_url": "https://chatbot-test212.herokuapp.com/"

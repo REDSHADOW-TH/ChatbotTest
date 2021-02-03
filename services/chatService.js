@@ -63,10 +63,7 @@ function sendTemplateExample(img1 = null, img2 = null) {
                 "messenger_extensions": false,
                 "webview_height_ratio": "tall",
                 "fallback_url": "https://petersfancybrownhats.com/"
-              },
-              "buttons": [
-                
-              ]
+              }
             }
           ]
         }

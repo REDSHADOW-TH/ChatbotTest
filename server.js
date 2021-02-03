@@ -39,6 +39,8 @@ server.post('/webhook', (req, res) => {
     
     let recipient = body.entry[0].messaging[0].sender.id
 
+    console.log('body', body)
+
     let message = getMessage(body.entry[0].messaging[0].message.text)
 
     console.log(body)

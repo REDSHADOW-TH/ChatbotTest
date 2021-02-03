@@ -15,11 +15,12 @@ function callSendAPI(sender_psid, response, fullMessage = null) {
       }
     }
   } else {
+    const msg = fullMessage.message
     request_body = {
       "recipient": {
         "id": sender_psid
       },
-      fullMessage
+      "message": msg
     }
   }
 

@@ -46,7 +46,7 @@ function sendTemplateExample(img1 = null, img2 = null) {
   let data = null
   let imgPath = ''
   let myData = {
-    "message": {
+    "message": JSON.stringify({
       "attachment": {
         "type": "template",
         "payload": {
@@ -78,7 +78,7 @@ function sendTemplateExample(img1 = null, img2 = null) {
           ]
         }
       }
-    }
+    })
   }
 
 

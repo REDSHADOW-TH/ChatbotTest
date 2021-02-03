@@ -99,7 +99,7 @@ function sendMessage(recipient, message) {
     callSendAPI(recipient, message, sendTemplateExample())
   } else {
     console.log('generic case')
-    callSendAPI(recipient, messgae)
+    callSendAPI(recipient, message)
   }
 }
 

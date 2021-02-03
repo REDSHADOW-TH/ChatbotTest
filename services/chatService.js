@@ -23,6 +23,9 @@ function callSendAPI(sender_psid, response, fullMessage = null) {
     }
   }
 
+  console.log('message', request_body)
+
+  
   request({
     "uri": "https://graph.facebook.com/v2.6/me/messages",
     "qs": { "access_token": config.vertifyToken },

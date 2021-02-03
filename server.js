@@ -1,3 +1,4 @@
+const version = require('./package.json').version
 const express = require('express')
 const bodyParser = require('body-parser')
 const server = express().use(bodyParser.json())
@@ -50,6 +51,11 @@ server.get('/', (req, res) => {
     res.send({
         status: 200, message: '.....'
     })
+})
+
+// send server version.
+server.get('/version', (req, res) => {
+    res.send(version)
 })
 
 server.listen(port, () => {

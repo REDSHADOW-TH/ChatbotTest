@@ -55,14 +55,14 @@ function sendTemplateExample(img1 = null, img2 = null) {
           "elements": [
             {
               "title": "Welcome!",
-              "image_url": "https://petersfancybrownhats.com/company_image.png",
+              "image_url": "https://dkt6rvnu67rqj.cloudfront.net/cdn/ff/T8cy0-640W8sartvA9TWmv08NbGPFxsVvf8gFtBDE08/1577112797/public/styles/600x400/public/media/int_files/elephant_in_tanzania.jpg?h=f507d761&itok=Ei8OXcGi",
               "subtitle": "We have the right hat for everyone.",
               "default_action": {
                 "type": "web_url",
                 "url": "https://petersfancybrownhats.com/view?item=103",
                 "messenger_extensions": false,
                 "webview_height_ratio": "tall",
-                "fallback_url": "https://petersfancybrownhats.com/"
+                "fallback_url": "https://chatbot-test212.herokuapp.com/"
               }
             }
           ]

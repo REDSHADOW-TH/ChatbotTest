@@ -25,7 +25,7 @@ function callSendAPI(sender_psid, response, fullMessage = null) {
 
   console.log('message', request_body)
 
-  
+
   request({
     "uri": "https://graph.facebook.com/v2.6/me/messages",
     "qs": { "access_token": config.vertifyToken },
@@ -97,7 +97,7 @@ function sendMessage(recipient, message) {
   if (message === 'template-example') {
     callSendAPI(recipient, message, sendTemplateExample())
   } else {
-    callSendAPI()
+    callSendAPI(recipient, messgae)
   }
 }
 

@@ -95,8 +95,10 @@ function makeGenericTemplate(senderId, title, subTitle, imgUrl) {
 
 function sendMessage(recipient, message) {
   if (message === 'template-example') {
+    console.log('template case')
     callSendAPI(recipient, message, sendTemplateExample())
   } else {
+    console.log('generic case')
     callSendAPI(recipient, messgae)
   }
 }

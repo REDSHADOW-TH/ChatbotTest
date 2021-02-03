@@ -28,17 +28,27 @@ function callSendAPI(sender_psid, response, fullMessage = null) {
             "elements": [
               {
                 "title": "Welcome!",
-                "image_url": "https://dkt6rvnu67rqj.cloudfront.net/cdn/ff/T8cy0-640W8sartvA9TWmv08NbGPFxsVvf8gFtBDE08/1577112797/public/styles/600x400/public/media/int_files/elephant_in_tanzania.jpg?h=f507d761&itok=Ei8OXcGi",
-                "subtitle": "We have the right hat for everyone.",
+                "image_url": "https://www.brother.co.th/-/media/ap/Common/Icons/Common/sns_brotherlogoicon.png",
+                "subtitle": "ทดสอบการส่ง template เเละ รูปภาพ",
                 "default_action": {
                   "type": "web_url",
-                  "url": "https://chatbot-test212.herokuapp.com/",
+                  "url": "c/",
                   "messenger_extensions": true,
                   "webview_height_ratio": "tall",
                   "fallback_url": "https://chatbot-test212.herokuapp.com/"
                 }
               }
-            ]
+            ],"buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.brother.co.th",
+                "title":"ทดสอบปุ่ม (ไปที่ Bother)"
+              },{
+                "type":"postback",
+                "title":"ตอบกลับเพจ",
+                "payload":"DEVELOPER_DEFINED_PAYLOAD"
+              }              
+            ]  
           }
         }
       })

@@ -36,19 +36,19 @@ function callSendAPI(sender_psid, response, fullMessage = null) {
                   "messenger_extensions": true,
                   "webview_height_ratio": "tall",
                   "fallback_url": "https://chatbot-test212.herokuapp.com/"
-                }
+                },"buttons":[
+                  {
+                    "type":"web_url",
+                    "url":"https://www.brother.co.th",
+                    "title":"ทดสอบปุ่ม (ไปที่ Bother)"
+                  },{
+                    "type":"postback",
+                    "title":"ตอบกลับเพจ",
+                    "payload":"DEVELOPER_DEFINED_PAYLOAD"
+                  }              
+                ]  
               }
-            ],"buttons":[
-              {
-                "type":"web_url",
-                "url":"https://www.brother.co.th",
-                "title":"ทดสอบปุ่ม (ไปที่ Bother)"
-              },{
-                "type":"postback",
-                "title":"ตอบกลับเพจ",
-                "payload":"DEVELOPER_DEFINED_PAYLOAD"
-              }              
-            ]  
+            ]
           }
         }
       })

@@ -32,7 +32,7 @@ function callSendAPI(sender_psid, response, fullMessage = null) {
                 "subtitle": "We have the right hat for everyone.",
                 "default_action": {
                   "type": "web_url",
-                  "url": "https://petersfancybrownhats.com/view?item=103",
+                  "url": "https://chatbot-test212.herokuapp.com/",
                   "messenger_extensions": false,
                   "webview_height_ratio": "tall",
                   "fallback_url": "https://chatbot-test212.herokuapp.com/"

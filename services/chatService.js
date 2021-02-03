@@ -86,7 +86,17 @@ function sendTemplateExample(img1 = null, img2 = null) {
                 "fallback_url": "https://chatbot-test212.herokuapp.com/"
               }
             }
-          ]
+          ],"buttons":[
+            {
+              "type":"web_url",
+              "url":"https://chatbot-test212.herokuapp.com/",
+              "title":"View Website"
+            },{
+              "type":"postback",
+              "title":"Start Chatting",
+              "payload":"DEVELOPER_DEFINED_PAYLOAD"
+            }              
+          ]      
         }
       }
     })
